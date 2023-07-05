@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul li:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+nav span {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav span {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  nav span.active {
+    color: green;
+  }
+}/*# sourceMappingURL=style.css.map */
